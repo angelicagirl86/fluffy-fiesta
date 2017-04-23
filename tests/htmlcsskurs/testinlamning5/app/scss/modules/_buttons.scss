@@ -1,0 +1,17 @@
+//Buttons module
+
+.btn-green {
+   @include button-bg(#2ecc71);
+}
+
+.btn-blue {
+   @include button-bg(#3498db);
+}
+
+.btn-yellow{
+   @include button-bg(#f1c40f);
+}
+
+.btn-red {
+   @include button-bg(#e74c3c);
+}
