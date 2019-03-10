@@ -1,0 +1,96 @@
+/* footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+} */
+
+/* -------------------- FOOTER -------------------- */
+.footer-wrapper {
+    background-color: #111;
+    padding: 4em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -2em;
+}
+
+.info-women-men-wrapper {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-social-media h3 {
+    font-size: 1.4em;
+    font-weight: 300;
+    padding-bottom: .5em;
+}
+
+.about-social-media p {
+    font-family: 'Roboto', sans-serif;
+    font-size: .75em;
+    font-weight: 300;
+    line-height: 2;
+    padding-bottom: .5em;
+}
+
+.social-media {
+    font-size: 2em;
+    padding-right: .5em;
+}
+
+.social-media a {
+    padding-right: .5em;
+}
+
+.social-media a:hover {
+    padding-right: .5em;
+}
+
+.about-social-media {
+    width: 35%;
+}
+
+.footer-info-wrapper,
+.footer-women-wrapper {
+    padding-right: 30px;
+}
+
+.footer-info-wrapper a,
+.footer-women-wrapper ul li a,
+.footer-men-wrapper ul li a {
+    font-size: .7em;
+}
+
+/* Copyright */
+.copyright-wrapper {
+    background-color: #1d1d1d;
+    padding: 1em;
+    box-shadow: 0px -5px 18px 1px rgba(0,0,0,0.8);
+}
+
+.copyright {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.copyright span,
+.copyright span {
+    font-size: .6em;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+

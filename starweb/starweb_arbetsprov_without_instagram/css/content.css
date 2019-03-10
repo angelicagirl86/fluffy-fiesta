@@ -1,0 +1,219 @@
+/* -------------------- NEW COLLECTION -------------------- */
+
+.new-collection-card {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.columns {
+    flex: 0 0 45%;
+}
+
+.column-left {
+    overflow: hidden;
+	position: relative;
+}
+
+.column-left img {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	height: auto;
+	width: auto;
+	min-width: 100%;
+	min-height: 100%;
+	transform: translate(-50%, -50%);
+}
+
+@supports (object-fit: cover) {
+    .object-fit img  {
+      position: static;
+      height: 100%;
+      width: 100%;
+      transform: none;
+      object-fit: cover;
+    }
+  }
+  
+.column-right {
+    background-color: #111111;
+    padding: 0 3em;
+    height: 400px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.column-right h3 {
+    font-size: 2.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: .2em;
+}
+
+.column-right p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: .8em;
+    letter-spacing: 1px;
+}
+
+/* Call to Action */
+.column-right .call-to-action:hover {
+    background-color: #fcfcfc;
+    color: #111111;
+}
+
+.call-to-action span {
+    transition-property: none;
+}
+
+.column-right .call-to-action span:after {
+    display: none;
+}
+
+.column-right .call-to-action:hover span {
+    padding-right: 0;
+}
+
+/* -------------------- PRODUCTS -------------------- */
+.category-container {
+    background-color: #f1f1f1;
+    color: #111111;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Product heading */
+.all-products h2 {
+    color: #111111;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 10px;
+    margin: 10px 0 20px;
+}
+
+/* line below heading */
+/* .all-products h2:after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: grey;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+} */
+
+.all-products h2:before, 
+.all-products h2:after{
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 1px;
+    content: '';
+    background-color: #111;
+}
+
+.all-products h2:before {
+    margin-left: -50px;
+    text-align: right;
+}
+
+.all-products > h2 > span {
+    padding: 0 20px;
+}
+/* End of Product heading */
+
+.category-cards-wrapper {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    width: 300px;
+    box-shadow: 0px 0px 20px -2px rgba(17,17,17,0.2);
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s;
+}
+
+.product-card:hover {
+    box-shadow: 0px 0px 20px -2px rgba(17,17,17,0.55);
+}
+
+.product-img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 1em 0 1em;
+}
+
+.product-img-text h3 {
+    padding: .5em 0 .4em 0;
+}
+
+.product-img-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: .8em;
+    text-align: center;
+    padding-bottom: 1.3em;
+}
+
+.product-card > .product-footer-wrapper {
+    border-top: 1px solid #d0d0d0;
+    height: 3em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 2em);
+}
+
+.product-card > .product-footer-wrapper > .footer-price{
+    padding-left: 1.8em;
+}
+
+.product-card > .product-footer-wrapper > .footer-icons {
+    padding-right: 1.8em;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icons > a > svg > path {
+    fill: #000;
+}
+
+.footer-icons i {
+    color: #111111;
+    font-size: 1.2em;
+    transition: .3s;
+}
+
+.footer-icons i:hover {
+    color: #f00000;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+
+
+
+
