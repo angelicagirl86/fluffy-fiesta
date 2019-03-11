@@ -161,19 +161,32 @@
   }
 }
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 728px) {
+  .category-container {
+    margin-bottom: 0em;
+  }
+
   .copyright {
-    width: 55%;
+    width: 50%;
+  }
+
+  .footer-container {
+    margin: 0;
+    padding: 4em 1.5em 4em 1.5em;
   }
 
   .footer-wrapper {
-    padding: 2em;
+    padding: 0;
     flex-direction: column;
     align-items: center;
   }
 
   .social-media {
     padding: 0;
+  }
+  
+  .about-social-media {
+    padding-right: 2em;
   }
 
   .about-social-media,
@@ -183,25 +196,105 @@
   }
 
   .info-women-men-wrapper {
-    padding-top: 2em;
+    padding-top: 0;
+  }
+
+  .about-social-media {
+    text-align: left;
+  }
+
+  .about-social-media p {
+    font-size: .7em;
+  }
+
+  .footer-info-wrapper ul li a,
+  .footer-women-wrapper ul li a, 
+  .footer-men-wrapper ul li a {
+    font-size: .5em;
   }
 }
 
-@media screen and (max-width: 416px) {
-  .copyright {
-    width: 90%;
+
+@media screen and (max-width: 523px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 2.5em;
   }
 
   .info-women-men-wrapper {
     padding-top: 2em;
-    display: flex;
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .about-social-media {
+    text-align: center;
+  }
+
+  .about-social-media p {
+    font-size: .9em;
+  }
+
+  .footer-info-wrapper ul li a,
+  .footer-women-wrapper ul li a, 
+  .footer-men-wrapper ul li a {
+    font-size: .7em;
+  }
+
+  .copyright {
+    width: 70%;
+  }
+}
+
+
+@media screen and (max-width: 419px) {
+  .category-container {
+    margin-bottom: 0em;
+  }
+
+  .footer-container {
+    padding: 2em;
+  }
+
+  .info-women-men-wrapper {
     flex-direction: column;
   }
 
   .footer-info-wrapper,
   .footer-women-wrapper {
     padding-right: 0;
+  }
+
+  .footer-info-wrapper,
+  .footer-women-wrapper,
+  .footer-women-wrapper{
     padding-bottom: 1.2em;
+  }
+
+
+
+  .about-social-media p {
+    font-size: .8em;
+  }
+
+  .footer-info-wrapper ul li a,
+  .footer-women-wrapper ul li a, 
+  .footer-men-wrapper ul li a {
+    font-size: .8em;
+  }
+
+  .copyright {
+    width: 80%;
+  }
 }
+
+@media screen and (max-width: 368px) {
+  .copyright {
+    width: 99%;
+  }
 }
+
+
+
+
 
