@@ -221,6 +221,15 @@
     padding: 2.5em;
   }
 
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-media a:last-child{
+    padding: 0;
+  }
+
   .info-women-men-wrapper {
     padding-top: 2em;
     /* display: flex;
@@ -271,7 +280,9 @@
     padding-bottom: 1.2em;
   }
 
-
+  .social-media a:last-child{
+    padding: 0;
+  }
 
   .about-social-media p {
     font-size: .8em;
@@ -291,6 +302,10 @@
 @media screen and (max-width: 368px) {
   .copyright {
     width: 99%;
+  }
+
+  .social-media a:last-child{
+    padding: 0;
   }
 }
 
